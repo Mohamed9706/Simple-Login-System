@@ -1,0 +1,7 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^simple-login-system.test[nc]
+RewriteRule ^(.*)$ http://www.simple-login-system.test/$1 [r=301,nc]
+
+ 
